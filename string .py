@@ -46,14 +46,11 @@ print(step1)
 step2=step1.split()
 print(' '.join(step2[::-1]))
 
+# replace()
 fullName = input("enter the username: ")
 clean = fullName.lower() 
 step2= clean.replace(' ','_')
 print(f'your username is {step2}')
-
-password = input("enter the password: ")
-step1=password.maketrans('aeios','@3!0$')
-print(f'your secret code is: {password.translate(step1)}0##9')
 
 fullEmail='laxman.kc@gmail.com'
 step1=fullEmail[:9]
@@ -79,6 +76,7 @@ phone_number="+977 9849-241-223"
 clean=phone_number.replace('-','')
 print(clean)
 
+# maketrans()
 fullEmail="dilesh.praj12@gmail.com"
 step1=fullEmail.maketrans('','','.12@gmailcom')
 print(fullEmail.translate(step1))
