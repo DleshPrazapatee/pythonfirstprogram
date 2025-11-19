@@ -78,3 +78,11 @@ print(step1)
 phone_number="+977 9849-241-223"
 clean=phone_number.replace('-','')
 print(clean)
+
+fullEmail="dilesh.praj12@gmail.com"
+step1=fullEmail.maketrans('','','.12@gmailcom')
+print(fullEmail.translate(step1))
+
+password='dlesh2092'
+step1=password.maketrans('les92','192es')
+print(password.translate(step1))
